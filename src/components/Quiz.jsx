@@ -25,7 +25,7 @@ const Quiz = ({ singlequestion,score, setScore }) => {
 
          <div className='bg-gray-100 m-4 w-full lg:w-1/2 mx-auto p-4 rounded-[30px]'>
             <h1 className='text-xl mb-3 text-center'>
-               {question}
+               {question.slice(3,-4)}
             </h1>
             <EyeIcon onClick={handleEye} className="h-6 w-6 text-blue-500" />
             <div className='gap-4 shadow-lg pb-4 rounded-[25px]' >
