@@ -27,6 +27,7 @@ export const router = createBrowserRouter([{
          },
          element: <Topics/>
       },
+      
       {path: '*', element: <Home/>}
    ]
 }])

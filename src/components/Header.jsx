@@ -8,7 +8,7 @@ export const Header = () => {
      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
        <div className="relative flex items-center justify-between">
          <NavLink
-           to="/"
+           to="/home"
            aria-label="Quizzy Program"
            title="Quizzy"
            className="inline-flex items-center"
@@ -38,7 +38,7 @@ export const Header = () => {
                to="/home"
                aria-label="Home"
                title="Home"
-               className={`font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400`}
+               className={({isActive})=> isActive ? 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-green-700 transition-colors duration-200 hover:text-deep-purple-accent-700'}
              >
                Home
              </NavLink>
@@ -55,29 +55,29 @@ export const Header = () => {
            </li>
            <li>
              <NavLink
-               to="/"
-               aria-label="Product pricing"
-               title="Product pricing"
+               to="/statistics"
+               aria-label="Statistics"
+               title="Statistics"
                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
              >
-               Pricing
+               Statistics
              </NavLink>
            </li>
            <li>
              <NavLink
-               to="/"
-               aria-label="About us"
-               title="About us"
+               to="/blog"
+               aria-label="Blog"
+               title="Blog"
                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
              >
-               About us
+               Blog
              </NavLink>
            </li>
          </ul>
          <ul className="flex items-center hidden space-x-8 lg:flex">
            <li>
              <NavLink
-               to="/"
+               to="/home"
                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                aria-label="Sign up"
                title="Sign up"
@@ -114,7 +114,7 @@ export const Header = () => {
                  <div className="flex items-center justify-between mb-4">
                    <div>
                      <NavLink
-                       to="/"
+                       to="/home"
                        aria-label="Quizzy Program"
                        title="Quizzy Program"
                        className="inline-flex items-center"
@@ -159,7 +159,7 @@ export const Header = () => {
                    <ul className="space-y-4">
                      <li>
                        <NavLink
-                         to="/"
+                         to="/home"
                          aria-label="Home"
                          title="Home"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -169,19 +169,19 @@ export const Header = () => {
                      </li>
                      <li>
                        <NavLink
-                         to="/"
-                         aria-label="Our product"
-                         title="Our product"
+                         to="/topics"
+                         aria-label="Topics"
+                         title="Topics"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                        >
-                         Features
+                         Topics
                        </NavLink>
                      </li>
                      <li>
                        <NavLink
-                         to="/"
-                         aria-label="Product pricing"
-                         title="Product pricing"
+                         to="/statistics"
+                         aria-label="Statistics"
+                         title="Statistics"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                        >
                          Pricing
@@ -189,12 +189,12 @@ export const Header = () => {
                      </li>
                      <li>
                        <NavLink
-                         to="/"
-                         aria-label="About us"
-                         title="About us"
+                         to="/blog"
+                         aria-label="Blog"
+                         title="Blog"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                        >
-                         About us
+                         Blog
                        </NavLink>
                      </li>
                      <li>

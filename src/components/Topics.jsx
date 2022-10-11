@@ -5,11 +5,14 @@ import Quiz from './Quiz';
 const Topics = () => {
    const topics = useLoaderData();
    const { name, questions } = topics.data;
-   console.log();return (
+   return (
       <div>
-         <h1>{name}</h1>
+         <h1 className='text-4xl font-bold'>{name}</h1>
          {
-            questions.map(singlequestion => <Quiz key={singlequestion.id} singlequestion={ singlequestion} />)
+            questions.map(singlequestion => <Quiz
+               key={singlequestion.id}
+               singlequestion={singlequestion}
+            />)
          }
       </div>
    );

@@ -12,7 +12,7 @@ const ErrorPage = () => {
             <i className='text-red-400 text-2xl'>{ error.statusText || error.message}</i>
          </p>
          <button className='text-2xl'>
-            <Link to="/home">
+            <Link className='underline' to="/home">
 
                Back To Home
             </Link>
