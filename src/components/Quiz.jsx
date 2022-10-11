@@ -25,7 +25,11 @@ const Quiz = ({ singlequestion }) => {
    return (
       <div className='bg-gray-100 m-4 w-1/2 mx-auto p-4 rounded-lg'>
 
-         <h1 className='text-xl mb-3 text-center'>Quiz: {question}</h1>
+         <div className='text-xl mb-3 text-center'>Quiz:
+            {
+               question === 'string' && question
+            }
+         </div>
 
          <EyeIcon onClick={handleEye} className="h-6 w-6 text-blue-500" />
          <div className='grid grid-cols-2 gap-2 shadow-lg pb-4 rounded-lg' >
