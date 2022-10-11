@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Quiz from './Quiz';
 
 const Topics = () => {
@@ -14,6 +14,11 @@ const Topics = () => {
                singlequestion={singlequestion}
             />)
          }
+         <button className='text-3xl underline mb-5 bg-green-500 hover:bg-green-700 duration-500 p-3 rounded-md'>
+            <Link to='/home'>
+               Back to Topics
+            </Link>
+         </button>
       </div>
    );
 };

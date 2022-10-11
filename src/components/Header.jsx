@@ -38,19 +38,19 @@ export const Header = () => {
                to="/home"
                aria-label="Home"
                title="Home"
-               className={({isActive})=> isActive ? 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-green-700 transition-colors duration-200 hover:text-deep-purple-accent-700'}
+               className={({isActive})=> isActive ? 'font-medium tracking-wide text-green-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-slate-700 transition-colors duration-200 hover:text-deep-purple-accent-700'}
              >
                Home
              </NavLink>
            </li>
            <li>
              <NavLink
-               to="/topics"
-               aria-label="Topics"
-               title="Topics"
-               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+               to="/blogs"
+               aria-label="Blogs"
+               title="Blogs"
+               className={({isActive})=> isActive ? 'font-medium tracking-wide text-green-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-slate-700 transition-colors duration-200 hover:text-deep-purple-accent-700'}
              >
-               Topics
+               Blogs
              </NavLink>
            </li>
            <li>
@@ -169,12 +169,12 @@ export const Header = () => {
                      </li>
                      <li>
                        <NavLink
-                         to="/topics"
-                         aria-label="Topics"
-                         title="Topics"
+                         to="/blogs"
+                         aria-label="Blogs"
+                         title="Blogs"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                        >
-                         Topics
+                         Blogs
                        </NavLink>
                      </li>
                      <li>
