@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blogs from "../components/Blogs";
+import Contact from "../components/Contact";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
 import Rechart from "../components/Rechart";
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([{
       {
          path: 'rechart',
          element: <Rechart/>
+      },
+      {
+         path: 'contact',
+         element: <Contact/>
       },
       
       {path: '*', element: <Home/>}

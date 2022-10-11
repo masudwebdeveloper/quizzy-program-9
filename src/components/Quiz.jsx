@@ -5,6 +5,7 @@ import { toast } from 'react-toastify'
 
 const Quiz = ({ singlequestion,score, setScore }) => {
    const { question, options, correctAnswer } = singlequestion;
+   console.log(singlequestion);
    const handlequiz = (quiz) => {
       const correctExist = options.find(existQuiz => existQuiz === quiz);
       if (correctAnswer === correctExist) {
@@ -13,8 +14,6 @@ const Quiz = ({ singlequestion,score, setScore }) => {
       } else {
          toast.error('your answer is wrong!', { autoClose: 500 })
       }
-
-
    }
    const handleEye = () => {
       toast.success(correctAnswer, { autoClose: 5000 })
@@ -24,8 +23,8 @@ const Quiz = ({ singlequestion,score, setScore }) => {
       <div>
          {/* header */}
 
-         <div className='bg-gray-100 m-4 w-1/2 mx-auto p-4 rounded-[30px]'>
-            <h1 className='text-xl mb-3 text-center'>Quiz:
+         <div className='bg-gray-100 m-4 w-full lg:w-1/2 mx-auto p-4 rounded-[30px]'>
+            <h1 className='text-xl mb-3 text-center'>
                {question}
             </h1>
             <EyeIcon onClick={handleEye} className="h-6 w-6 text-blue-500" />
