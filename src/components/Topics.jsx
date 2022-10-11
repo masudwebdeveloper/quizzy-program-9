@@ -7,7 +7,6 @@ const Topics = () => {
    const [currentQuestion, setCurrentQuestion] = useState(0);
    const topics = useLoaderData();
    const { name, questions } = topics.data;
-   console.log(questions);
    return (
       <div>
          {/* header */}
