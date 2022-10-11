@@ -21,15 +21,17 @@ const Rechart = () => {
          })
    }, [])
    return (
-      <div className='w-1/2 mx-auto'>
-         <BarChart width={500} height={400} data={quiz}>
-            <Bar dataKey="quizNumber" fill="#8884d8" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Legend />
-            <Tooltip />
-            <CartesianGrid/>
-         </BarChart>
+      <div className='w-full lg:w-3/12 mx-auto text-center'>
+         <ResponsiveContainer width="100%" height={400}>
+            <BarChart data={quiz}>
+               <Bar dataKey="quizNumber" fill="#8884d8" />
+               <XAxis dataKey="name" />
+               <YAxis />
+               <Legend />
+               <Tooltip />
+               <CartesianGrid />
+            </BarChart>
+         </ResponsiveContainer>
       </div>
    )
 };

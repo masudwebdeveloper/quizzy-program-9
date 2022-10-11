@@ -12,6 +12,7 @@ const Topics = () => {
       <div>
          {/* header */}
          <h1 className='text-4xl font-bold mb-5'>Quiz of {name}</h1>
+         {/* your score */}
          <h2 className='text-3xl font-bold mb-5'> Your Final Score: { score} / { questions.length}</h2>
          <h2 className='text-3xl font-bold'>Question {currentQuestion + 1} out of { questions.length}</h2>
          {
