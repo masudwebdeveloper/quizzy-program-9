@@ -5,7 +5,7 @@ export const Header = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
  
    return (
-     <div className="text-white dark:bg-gray-700 sticky top-0 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-full md:px-24 lg:px-8">
+     <div className="z-10 text-white dark:bg-gray-700 sticky top-0 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-full md:px-24 lg:px-8">
        <div className="relative flex items-center justify-between">
          <NavLink
            to="/home"
