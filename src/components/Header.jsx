@@ -65,12 +65,12 @@ export const Header = () => {
            </li>
            <li>
              <NavLink
-               to="/blog"
-               aria-label="Blog"
-               title="Blog"
-               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+               to="/about"
+               aria-label="About"
+               title="About"
+               className={({isActive})=> isActive ? 'font-medium tracking-wide text-green-500 transition-colors duration-200 hover:text-deep-purple-accent-400' : 'font-medium tracking-wide text-slate-700 transition-colors duration-200 hover:text-deep-purple-accent-700'}
              >
-               Blog
+               About
              </NavLink>
            </li>
          </ul>
@@ -189,12 +189,12 @@ export const Header = () => {
                      </li>
                      <li>
                        <NavLink
-                         to="/blog"
-                         aria-label="Blog"
-                         title="Blog"
+                         to="/about"
+                         aria-label="About"
+                         title="About"
                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                        >
-                         Blog
+                         About
                        </NavLink>
                      </li>
                      <li>

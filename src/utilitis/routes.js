@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import About from "../components/About";
 import Blogs from "../components/Blogs";
 import Contact from "../components/Contact";
 import ErrorPage from "../components/ErrorPage";
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([{
       {
          path: 'rechart',
          element: <Rechart/>
+      },
+      {
+         path: 'about',
+         element: <About/>
       },
       {
          path: 'contact',
