@@ -1,7 +1,7 @@
 # This is Quzziy Program Website
 ### This is live site link to below
 
-my live netlify link [Quizzy Program]()
+my live netlify link [Quizzy Program](https://quizzy-program.netlify.app/home)
 
 This project was tailwindcss with [Create React App](https://reactjs.org/).
 
